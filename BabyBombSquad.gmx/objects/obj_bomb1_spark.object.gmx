@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//path_start(path_fuse, 1, 0, true);
+            <string>path_start(path_fuse, 1, 0, true);
 </string>
           </argument>
         </arguments>
@@ -48,10 +48,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*if(path_position = 1)
+            <string>if(path_position = 1)
 {
     room_goto(rm_gameOver);
-}*/
+}
 </string>
           </argument>
         </arguments>
