@@ -34,14 +34,16 @@
       <sprite>sprites\spr_stroller</sprite>
     </sprites>
     <sprite>sprites\spr_trigger</sprite>
+    <sprite>sprites\spr_startLogo</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\back_level1</background>
+  </backgrounds>
   <paths name="paths">
     <path>paths\path_fuse</path>
   </paths>
   <objects name="objects">
     <object>objects\obj_babby</object>
-    <object>objects\obj_timer</object>
     <object>objects\obj_scissors</object>
     <object>objects\obj_screwdriver</object>
     <object>objects\obj_babyHand</object>
@@ -62,20 +64,32 @@
       <object>objects\obj_bomb2_plug</object>
       <object>objects\obj_bomb2_hatch</object>
       <object>objects\obj_bomb2_plugInSocket</object>
+      <object>objects\obj_timer</object>
     </objects>
     <objects name="level3">
       <object>objects\obj_groundtile</object>
       <object>objects\obj_strollerbaby</object>
       <object>objects\obj_trigger</object>
     </objects>
+    <object>objects\obj_startLogo</object>
+    <object>objects\obj_startController</object>
+    <object>objects\obj_gameOver</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_level1</room>
-    <room>rooms\rm_level2</room>
-    <room>rooms\rm_level3</room>
     <room>rooms\rm_start</room>
-    <room>rooms\rm_gameOver</room>
+    <room>rooms\rm_level1</room>
     <room>rooms\rm_level1_win</room>
+    <room>rooms\rm_gameOver1</room>
+    <room>rooms\rm_level2</room>
+    <room>rooms\rm_level2_win</room>
+    <room>rooms\rm_gameOver2</room>
+    <room>rooms\rm_level3</room>
+    <room>rooms\rm_level3_win</room>
+    <room>rooms\rm_gameOver3</room>
+    <room>rooms\rm_level4</room>
+    <room>rooms\rm_level4_win</room>
+    <room>rooms\rm_gameOver4</room>
+    <room>rooms\rm_completed</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
