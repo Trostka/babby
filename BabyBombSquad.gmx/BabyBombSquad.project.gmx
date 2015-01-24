@@ -6,7 +6,6 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_babby</sprite>
     <sprites name="level1">
       <sprite>sprites\spr_bomb1_spark</sprite>
       <sprite>sprites\spr_bomb1_dynamite</sprite>
@@ -25,6 +24,12 @@
       <sprite>sprites\spr_bomb2_socket</sprite>
       <sprite>sprites\spr_bomb2_plugInSocket</sprite>
     </sprites>
+    <sprites name="level3">
+      <sprite>sprites\spr_ground</sprite>
+      <sprite>sprites\spr_stroller</sprite>
+    </sprites>
+    <sprite>sprites\spr_babby</sprite>
+    <sprite>sprites\spr_trigger</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
@@ -52,8 +57,14 @@
       <object>objects\obj_bomb2_plug</object>
       <object>objects\obj_bomb2_plugInSocket</object>
     </objects>
+    <objects name="level3">
+      <object>objects\obj_groundtile</object>
+      <object>objects\obj_strollerbaby</object>
+      <object>objects\obj_trigger</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_level3</room>
     <room>rooms\rm_level1</room>
     <room>rooms\rm_start</room>
     <room>rooms\rm_gameOver</room>
