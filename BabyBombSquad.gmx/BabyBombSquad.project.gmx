@@ -83,7 +83,6 @@
     <object>objects\obj_gameOver</object>
   </objects>
   <rooms name="rooms">
-<<<<<<< HEAD
     <room>rooms\rm_start</room>
     <room>rooms\rm_level1</room>
     <room>rooms\rm_level1_win</room>
@@ -98,14 +97,12 @@
     <room>rooms\rm_level4_win</room>
     <room>rooms\rm_gameOver4</room>
     <room>rooms\rm_completed</room>
-=======
     <room>rooms\rm_level3</room>
     <room>rooms\rm_level1</room>
     <room>rooms\rm_start</room>
     <room>rooms\rm_gameOver</room>
     <room>rooms\rm_level2</room>
     <room>rooms\rm_level1_win</room>
->>>>>>> origin/master
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
