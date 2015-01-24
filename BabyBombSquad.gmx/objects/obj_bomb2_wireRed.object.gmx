@@ -3,7 +3,7 @@
   <spriteName>spr_bomb2_wireRed</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>global.redCut = false;
+
 </string>
           </argument>
         </arguments>
@@ -51,6 +52,7 @@
             <string>if(global.redCut == true)
 {
     sprite_index = spr_bomb2_wireRedCut;
+    //global.time -= 10;
 }
 </string>
           </argument>

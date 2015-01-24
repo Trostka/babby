@@ -25,9 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>seconds = timeSeconds;
-minutes = timeMinutes;
-alarm[0] = room_speed;
+            <string>global.time = 90;
+alarm[0]=30; //Set alarm for one second (room_speed)
 </string>
           </argument>
         </arguments>
@@ -50,27 +49,18 @@ alarm[0] = room_speed;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>seconds -= 1;
+            <string>global.time-=1;
 
-if seconds &lt; 0// checks if seconds is less than 0
-{
-    seconds = 59;//resest seconds
-    minutes -=1;// take one off minutes
-}   
 
-if minutes &lt; 0 // check if minutes less than 0
-{
-    minutes = 59;// resiest minutes
-    hours -=1;//take one of hours
-}
-
-alarm[0]=room_speed;//reset alarm
-
-if seconds==0 &amp;&amp; minutes==0 &amp;&amp; hours==0 // check if countdown has reached 00:00:00
+if global.time == 0 // check if countdown has reached 00:00:00
 {
     // Do Something, for example@
     room_goto(rm_gameOver);
    
+}
+else
+{
+    alarm[0]=30;//reset alarm
 }
 </string>
           </argument>
@@ -94,13 +84,41 @@ if seconds==0 &amp;&amp; minutes==0 &amp;&amp; hours==0 // check if countdown ha
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//show_hours=string_repeat("0", 2-string_length(string(hours)))+string(hours);//if single digit add a leading 0
-show_minutes=string_repeat("0", 2-string_length(string(minutes)))+string(minutes);//if single digit add a leading 0
-show_seconds=string_repeat("0", 2-string_length(string(seconds)))+string(seconds);//if single digit add a leading 0
+            <string>//show_hours=string_repeat("0", 2-string_length(string(global.hours)))+string(global.hours);//if single digit add a leading 0
+//show_minutes=string_repeat("0", 2-string_length(string(global.minutes)))+string(global.minutes);//if single digit add a leading 0
+//show_seconds=string_repeat("0", 2-string_length(string(global.seconds)))+string(global.seconds);//if single digit add a leading 0
 
 
-draw_text(view_xview+5,view_yview+5,"Time: " + show_hours + ":" + show_minutes + ":" + show_seconds);//draw variables
+//draw_text(20, 20,"Time: " + global.time);//draw variables
 </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>613</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.time</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>20</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>20</string>
           </argument>
         </arguments>
       </action>
