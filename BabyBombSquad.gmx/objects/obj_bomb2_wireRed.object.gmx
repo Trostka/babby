@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>global.redCut = false;
+
 </string>
           </argument>
         </arguments>
@@ -51,6 +52,7 @@
             <string>if(global.redCut == true)
 {
     sprite_index = spr_bomb2_wireRedCut;
+    //global.time -= 10;
 }
 </string>
           </argument>
