@@ -10,6 +10,14 @@
     <sprite>sprites\spr_bomb1_fuse</sprite>
     <sprite>sprites\spr_bomb1_dynamite</sprite>
     <sprite>sprites\spr_babby</sprite>
+    <sprite>sprites\spr_bomb2_bomb</sprite>
+    <sprite>sprites\spr_bomb2_wireRed</sprite>
+    <sprite>sprites\spr_bomb2_wireBlue</sprite>
+    <sprite>sprites\spr_bomb2_wireGreen</sprite>
+    <sprite>sprites\spr_bomb2_wireRedCut</sprite>
+    <sprite>sprites\spr_bomb2_wireBlueCut</sprite>
+    <sprite>sprites\spr_bomb2_wireGreenCut</sprite>
+    <sprite>sprites\spr_bomb2_timer</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -17,7 +25,11 @@
     <object>objects\obj_bomb1_spark</object>
     <object>objects\obj_bomb1_fuse</object>
     <object>objects\obj_bomb1_dynamite</object>
-    <object>objects\obj_bomb2</object>
+    <object>objects\obj_bomb2_bomb</object>
+    <object>objects\obj_bomb2_timer</object>
+    <object>objects\obj_bomb2_wireRed</object>
+    <object>objects\obj_bomb2_wireBlue</object>
+    <object>objects\obj_bomb2_wireGreen</object>
     <object>objects\obj_timer</object>
     <object>objects\obj_scissors</object>
     <object>objects\obj_screwdriver</object>
@@ -29,6 +41,7 @@
     <room>rooms\rm_level1</room>
     <room>rooms\rm_start</room>
     <room>rooms\rm_gameOver</room>
+    <room>rooms\rm_level2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
