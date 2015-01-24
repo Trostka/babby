@@ -9,20 +9,24 @@
     <sprite>sprites\spr_bomb1_spark</sprite>
     <sprite>sprites\spr_bomb1_fuse</sprite>
     <sprite>sprites\spr_bomb1_dynamite</sprite>
+    <sprite>sprites\spr_babby</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_bomb1_spark</object>
     <object>objects\obj_bomb1_fuse</object>
+    <object>objects\obj_bomb1_dynamite</object>
     <object>objects\obj_bomb2</object>
     <object>objects\obj_timer</object>
     <object>objects\obj_scissors</object>
     <object>objects\obj_screwdriver</object>
     <object>objects\obj_babyHand</object>
+    <object>objects\obj_babby</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
+    <room>rooms\rm_level1</room>
     <room>rooms\rm_gameOver</room>
   </rooms>
   <help>
