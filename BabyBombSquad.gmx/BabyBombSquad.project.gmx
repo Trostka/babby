@@ -23,6 +23,7 @@
     <object>objects\obj_screwdriver</object>
     <object>objects\obj_babyHand</object>
     <object>objects\obj_babby</object>
+    <object>objects\obj_zoom</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
