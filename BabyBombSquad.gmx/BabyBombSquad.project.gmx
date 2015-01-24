@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\spr_bomb1_spark</sprite>
     <sprite>sprites\spr_bomb1_fuse</sprite>
+    <sprite>sprites\spr_bomb1_dynamite</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
