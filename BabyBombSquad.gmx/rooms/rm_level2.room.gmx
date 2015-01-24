@@ -53,12 +53,16 @@
   <instances>
     <instance objName="obj_bomb2_bomb" x="288" y="224" name="inst_3E8079D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bomb2_timer" x="371" y="256" name="inst_E0F5831F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bomb2_wireRed" x="352" y="248" name="inst_BE089B9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bomb2_wireBlue" x="352" y="245" name="inst_E9FFB8F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bomb2_wireGreen" x="352" y="256" name="inst_1C7B2629" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bomb2_plug" x="375" y="269" name="inst_C94E412A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bomb2_socket" x="536" y="263" name="inst_624DBDF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bomb2_plugInSocket" x="540" y="268" name="inst_2D2B727B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bomb2_wireRed" x="352" y="246" name="inst_BE089B9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bomb2_wireBlue" x="352" y="244" name="inst_E9FFB8F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bomb2_wireGreen" x="352" y="257" name="inst_1C7B2629" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bomb2_plug" x="414" y="256" name="inst_6F05B09B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_bomb2_socket" x="407" y="208" name="inst_B6A3C4C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_bomb2_plugInSocket" x="413" y="204" name="inst_AB141B00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_bomb2_hatch" x="344" y="245" name="inst_DF8B9303" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_scissors" x="224" y="352" name="inst_88561128" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_babyHand" x="352" y="352" name="inst_4582F0C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_screwdriver" x="480" y="352" name="inst_8E663108" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

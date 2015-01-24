@@ -6,6 +6,10 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprite>sprites\spr_babby</sprite>
+    <sprite>sprites\spr_screwdriver</sprite>
+    <sprite>sprites\spr_babyhand</sprite>
+    <sprite>sprites\spr_scissors</sprite>
     <sprites name="level1">
       <sprite>sprites\spr_bomb1_spark</sprite>
       <sprite>sprites\spr_bomb1_dynamite</sprite>
@@ -22,6 +26,7 @@
       <sprite>sprites\spr_bomb2_timer</sprite>
       <sprite>sprites\spr_bomb2_plug</sprite>
       <sprite>sprites\spr_bomb2_socket</sprite>
+      <sprite>sprites\spr_bomb2_hatch</sprite>
       <sprite>sprites\spr_bomb2_plugInSocket</sprite>
     </sprites>
     <sprites name="level3">
@@ -42,6 +47,7 @@
     <object>objects\obj_screwdriver</object>
     <object>objects\obj_babyHand</object>
     <object>objects\obj_zoom</object>
+    <object>objects\obj_roomController</object>
     <objects name="level1">
       <object>objects\obj_bomb1_spark</object>
       <object>objects\obj_bomb1_fuse</object>
@@ -55,6 +61,7 @@
       <object>objects\obj_bomb2_wireGreen</object>
       <object>objects\obj_bomb2_socket</object>
       <object>objects\obj_bomb2_plug</object>
+      <object>objects\obj_bomb2_hatch</object>
       <object>objects\obj_bomb2_plugInSocket</object>
     </objects>
     <objects name="level3">
@@ -69,6 +76,7 @@
     <room>rooms\rm_start</room>
     <room>rooms\rm_gameOver</room>
     <room>rooms\rm_level2</room>
+    <room>rooms\rm_level1_win</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
