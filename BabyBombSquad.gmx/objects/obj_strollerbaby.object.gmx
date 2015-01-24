@@ -27,6 +27,11 @@
             <kind>1</kind>
             <string>phy_fixed_rotation = true;
 canJump = true;
+velocity = 40;
+maxVelocity = 400;
+blowUp = false;
+canMove = true;
+phy_linear_velocity_x = 20;
 </string>
           </argument>
         </arguments>
@@ -49,12 +54,42 @@ canJump = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>physics_apply_local_force(-15,0,100,0);
-
-if(phy_linear_velocity_x &gt; 80)
+            <string>if( canMove == true )
 {
-    phy_linear_velocity_x = 80;
+    physics_apply_local_force(0,0,velocity,0);
+}
+if(phy_linear_velocity_x &gt; maxVelocity)
+{
+    phy_linear_velocity_x = maxVelocity;
     blowUp = true;
+}
+if(phy_linear_velocity_x &lt; 10)
+{
+    blowUp = true;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(canMove == true and blowUp == true)
+{
+    event_user(0);
 }
 </string>
           </argument>
@@ -84,7 +119,7 @@ if(phy_linear_velocity_x &gt; 80)
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="16">
+    <event eventtype="6" enumb="50">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -101,12 +136,54 @@ if(phy_linear_velocity_x &gt; 80)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(canJump == true)
+            <string>if(canMove == true and canJump == true)
 {
-    //physics_apply_impulse(0,0,0,-0);
-    physics_apply_local_impulse(0,10,0,-85);
+    phy_linear_velocity_y = 0;
+    physics_apply_local_impulse(0,30,0,-200);
     canJump = false;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>var percentage;
+percentage = (phy_linear_velocity_x / maxVelocity ) * 100;
+
+draw_healthbar(100,50,700,100, percentage, c_black, c_blue, c_red, 0, true, true);
 </string>
           </argument>
         </arguments>
