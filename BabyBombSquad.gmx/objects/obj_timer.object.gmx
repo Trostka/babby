@@ -25,9 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>seconds = timeSeconds;
-minutes = timeMinutes;
-alarm[0] = room_speed;
+            <string>var time = 60;
 </string>
           </argument>
         </arguments>
@@ -36,48 +34,70 @@ alarm[0] = room_speed;
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
-        <relative>0</relative>
+        <relative>-1</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>seconds -= 1;
-
-if seconds &lt; 0// checks if seconds is less than 0
-{
-    seconds = 59;//resest seconds
-    minutes -=1;// take one off minutes
-}   
-
-if minutes &lt; 0 // check if minutes less than 0
-{
-    minutes = 59;// resiest minutes
-    hours -=1;//take one of hours
-}
-
-alarm[0]=room_speed;//reset alarm
-
-if seconds==0 &amp;&amp; minutes==0 &amp;&amp; hours==0 // check if countdown has reached 00:00:00
-{
-    // Do Something, for example@
-    room_goto(rm_gameOver);
-   
-}
-</string>
+            <string>time</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>-1</string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>time</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -94,13 +114,60 @@ if seconds==0 &amp;&amp; minutes==0 &amp;&amp; hours==0 // check if countdown ha
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//show_hours=string_repeat("0", 2-string_length(string(hours)))+string(hours);//if single digit add a leading 0
-show_minutes=string_repeat("0", 2-string_length(string(minutes)))+string(minutes);//if single digit add a leading 0
-show_seconds=string_repeat("0", 2-string_length(string(seconds)))+string(seconds);//if single digit add a leading 0
-
-
-draw_text(view_xview+5,view_yview+5,"Time: " + show_hours + ":" + show_minutes + ":" + show_seconds);//draw variables
+            <string>room_goto(rm_gameOver);
 </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>421</id>
+        <kind>3</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>301</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_alarm</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>30</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
