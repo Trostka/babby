@@ -7,20 +7,24 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_babby</sprite>
-    <sprite>sprites\spr_bomb1_spark</sprite>
-    <sprite>sprites\spr_bomb1_fuse</sprite>
-    <sprite>sprites\spr_bomb1_dynamite</sprite>
-    <sprite>sprites\spr_bomb2_bomb</sprite>
-    <sprite>sprites\spr_bomb2_wireRed</sprite>
-    <sprite>sprites\spr_bomb2_wireBlue</sprite>
-    <sprite>sprites\spr_bomb2_wireGreen</sprite>
-    <sprite>sprites\spr_bomb2_wireRedCut</sprite>
-    <sprite>sprites\spr_bomb2_wireBlueCut</sprite>
-    <sprite>sprites\spr_bomb2_wireGreenCut</sprite>
-    <sprite>sprites\spr_bomb2_timer</sprite>
-    <sprite>sprites\spr_bomb2_plug</sprite>
-    <sprite>sprites\spr_bomb2_socket</sprite>
-    <sprite>sprites\spr_bomb2_plugInSocket</sprite>
+    <sprites name="level1">
+      <sprite>sprites\spr_bomb1_spark</sprite>
+      <sprite>sprites\spr_bomb1_dynamite</sprite>
+      <sprite>sprites\spr_bomb1_fuse</sprite>
+    </sprites>
+    <sprites name="level2">
+      <sprite>sprites\spr_bomb2_bomb</sprite>
+      <sprite>sprites\spr_bomb2_wireRed</sprite>
+      <sprite>sprites\spr_bomb2_wireBlue</sprite>
+      <sprite>sprites\spr_bomb2_wireGreen</sprite>
+      <sprite>sprites\spr_bomb2_wireRedCut</sprite>
+      <sprite>sprites\spr_bomb2_wireBlueCut</sprite>
+      <sprite>sprites\spr_bomb2_wireGreenCut</sprite>
+      <sprite>sprites\spr_bomb2_timer</sprite>
+      <sprite>sprites\spr_bomb2_plug</sprite>
+      <sprite>sprites\spr_bomb2_socket</sprite>
+      <sprite>sprites\spr_bomb2_plugInSocket</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
@@ -28,22 +32,26 @@
   </paths>
   <objects name="objects">
     <object>objects\obj_babby</object>
-    <object>objects\obj_bomb1_spark</object>
-    <object>objects\obj_bomb1_fuse</object>
-    <object>objects\obj_bomb1_dynamite</object>
-    <object>objects\obj_bomb2_bomb</object>
-    <object>objects\obj_bomb2_timer</object>
-    <object>objects\obj_bomb2_wireRed</object>
-    <object>objects\obj_bomb2_wireBlue</object>
-    <object>objects\obj_bomb2_wireGreen</object>
-    <object>objects\obj_bomb2_plug</object>
-    <object>objects\obj_bomb2_socket</object>
-    <object>objects\obj_bomb2_plugInSocket</object>
     <object>objects\obj_timer</object>
     <object>objects\obj_scissors</object>
     <object>objects\obj_screwdriver</object>
     <object>objects\obj_babyHand</object>
     <object>objects\obj_zoom</object>
+    <objects name="level1">
+      <object>objects\obj_bomb1_spark</object>
+      <object>objects\obj_bomb1_fuse</object>
+      <object>objects\obj_bomb1_dynamite</object>
+    </objects>
+    <objects name="level2">
+      <object>objects\obj_bomb2_bomb</object>
+      <object>objects\obj_bomb2_wireRed</object>
+      <object>objects\obj_bomb2_timer</object>
+      <object>objects\obj_bomb2_wireBlue</object>
+      <object>objects\obj_bomb2_wireGreen</object>
+      <object>objects\obj_bomb2_socket</object>
+      <object>objects\obj_bomb2_plug</object>
+      <object>objects\obj_bomb2_plugInSocket</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_level1</room>
