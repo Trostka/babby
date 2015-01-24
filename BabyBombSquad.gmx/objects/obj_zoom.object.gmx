@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>zoom_factor = 1.5;
+            <string>zoom_factor = 0.4;
 view_wview[0] = 1024 * (zoom_factor);
 view_hview[0] = 768 * (zoom_factor);
 </string>

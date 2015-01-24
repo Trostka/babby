@@ -3,7 +3,7 @@
   <spriteName>spr_bomb1_fuse</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>5</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(isCut == true)
+            <string>if(global.isCut == true)
 {
     global.winLevel1 = true;
 }
