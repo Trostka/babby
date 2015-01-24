@@ -19,6 +19,8 @@
     <sprite>sprites\spr_bomb2_wireGreenCut</sprite>
     <sprite>sprites\spr_bomb2_timer</sprite>
     <sprite>sprites\spr_bomb2_plug</sprite>
+    <sprite>sprites\spr_bomb2_socket</sprite>
+    <sprite>sprites\spr_bomb2_plugInSocket</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
@@ -35,6 +37,8 @@
     <object>objects\obj_bomb2_wireBlue</object>
     <object>objects\obj_bomb2_wireGreen</object>
     <object>objects\obj_bomb2_plug</object>
+    <object>objects\obj_bomb2_socket</object>
+    <object>objects\obj_bomb2_plugInSocket</object>
     <object>objects\obj_timer</object>
     <object>objects\obj_scissors</object>
     <object>objects\obj_screwdriver</object>
