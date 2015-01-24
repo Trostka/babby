@@ -30,8 +30,11 @@
       <sprite>sprites\spr_bomb2_plugInSocket</sprite>
     </sprites>
     <sprites name="level3">
+      <sprite>sprites\spr_baby_bottle</sprite>
       <sprite>sprites\spr_ground</sprite>
       <sprite>sprites\spr_stroller</sprite>
+      <sprite>sprites\spr_trigger</sprite>
+      <sprite>sprites\spr_lollipop</sprite>
     </sprites>
     <sprite>sprites\spr_trigger</sprite>
     <sprite>sprites\spr_startLogo</sprite>
@@ -68,14 +71,19 @@
     </objects>
     <objects name="level3">
       <object>objects\obj_groundtile</object>
+      <object>objects\obj_dummytile</object>
       <object>objects\obj_strollerbaby</object>
       <object>objects\obj_trigger</object>
+      <object>objects\obj_level3_zoom</object>
+      <object>objects\obj_stop</object>
+      <object>objects\obj_sweet</object>
     </objects>
     <object>objects\obj_startLogo</object>
     <object>objects\obj_startController</object>
     <object>objects\obj_gameOver</object>
   </objects>
   <rooms name="rooms">
+<<<<<<< HEAD
     <room>rooms\rm_start</room>
     <room>rooms\rm_level1</room>
     <room>rooms\rm_level1_win</room>
@@ -90,6 +98,14 @@
     <room>rooms\rm_level4_win</room>
     <room>rooms\rm_gameOver4</room>
     <room>rooms\rm_completed</room>
+=======
+    <room>rooms\rm_level3</room>
+    <room>rooms\rm_level1</room>
+    <room>rooms\rm_start</room>
+    <room>rooms\rm_gameOver</room>
+    <room>rooms\rm_level2</room>
+    <room>rooms\rm_level1_win</room>
+>>>>>>> origin/master
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
