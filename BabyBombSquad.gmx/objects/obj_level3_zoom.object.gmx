@@ -59,6 +59,7 @@ else if (keyboard_check(vk_subtract))
     zoom_factor += 0.01;
 }*/
 
+view_xview[0] = view_xview[0]+200;
 //multiply zoom factor by room's width and height
 //view_wview[0] = 960 * (zoom_factor);
 //view_hview[0] = 540 * (zoom_factor);
