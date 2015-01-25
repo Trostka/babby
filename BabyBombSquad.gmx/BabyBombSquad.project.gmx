@@ -9,15 +9,18 @@
     <sprite>sprites\spr_babby</sprite>
     <sprite>sprites\spr_screwdriver</sprite>
     <sprite>sprites\spr_babyhand</sprite>
+    <sprite>sprites\spr_scissorTrigger</sprite>
     <sprite>sprites\spr_scissors</sprite>
     <sprites name="level1">
       <sprite>sprites\spr_bomb1_spark</sprite>
       <sprite>sprites\spr_bomb1_dynamite</sprite>
       <sprite>sprites\spr_bomb1_fuse</sprite>
+      <sprite>sprites\spr_bomb1_fuse_highlight</sprite>
     </sprites>
     <sprites name="level2">
       <sprite>sprites\spr_bomb2_bomb</sprite>
       <sprite>sprites\spr_bomb2_wireRed</sprite>
+      <sprite>sprites\spr_bomb2_wireRed_highlight</sprite>
       <sprite>sprites\spr_bomb2_wireBlue</sprite>
       <sprite>sprites\spr_bomb2_wireGreen</sprite>
       <sprite>sprites\spr_bomb2_wireRedCut</sprite>
@@ -25,8 +28,10 @@
       <sprite>sprites\spr_bomb2_wireGreenCut</sprite>
       <sprite>sprites\spr_bomb2_timer</sprite>
       <sprite>sprites\spr_bomb2_plug</sprite>
+      <sprite>sprites\spr_bomb2_plug_highlight</sprite>
       <sprite>sprites\spr_bomb2_socket</sprite>
       <sprite>sprites\spr_bomb2_hatch</sprite>
+      <sprite>sprites\spr_bomb2_hatch_highlight</sprite>
       <sprite>sprites\spr_bomb2_plugInSocket</sprite>
     </sprites>
     <sprites name="level3">
@@ -35,14 +40,25 @@
       <sprite>sprites\spr_stroller</sprite>
       <sprite>sprites\spr_trigger</sprite>
       <sprite>sprites\spr_lollipop</sprite>
+      <sprite>sprites\spr_wheel</sprite>
     </sprites>
     <sprite>sprites\spr_startLogo</sprite>
-    <sprite>sprites\spr_wheel</sprite>
+    <sprite>sprites\spr_bomb4_screen</sprite>
+    <sprite>sprites\spr_bomb4_screen_highlight</sprite>
+    <sprite>sprites\spr_bomb4_timer</sprite>
+    <sprite>sprites\spr_bomb4_phoneOff</sprite>
+    <sprite>sprites\spr_bomb4_phoneOn</sprite>
+    <sprite>sprites\spr_bomb4_usbWrapped</sprite>
+    <sprite>sprites\spr_candy</sprite>
+    <sprite>sprites\spr_rubberDucky</sprite>
+    <sprite>sprites\spr_phoneHand</sprite>
+    <sprite>sprites\spr_usbUnwound</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_tilebomb</background>
     <background>background\bg_tilebomb2</background>
     <background>background\back_level1</background>
+    <background>background\back_level2</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_fuse</path>
@@ -50,6 +66,7 @@
   <objects name="objects">
     <object>objects\obj_babby</object>
     <object>objects\obj_scissors</object>
+    <object>objects\obj_scissorTrigger</object>
     <object>objects\obj_screwdriver</object>
     <object>objects\obj_babyHand</object>
     <object>objects\obj_zoom</object>
@@ -85,8 +102,19 @@
     <object>objects\obj_startLogo</object>
     <object>objects\obj_startController</object>
     <object>objects\obj_gameOver</object>
+    <object>objects\obj_bomb4_screen</object>
+    <object>objects\obj_bomb4_timer</object>
+    <object>objects\obj_bomb4_phone</object>
+    <object>objects\obj_bomb4_usbWrapped</object>
+    <object>objects\obj_candy</object>
+    <object>objects\obj_rubberDucky</object>
+    <object>objects\obj_timer_bomb4</object>
+    <object>objects\phoneHand</object>
+    <object>objects\obj_usbUnwound</object>
+    <object>objects\obj_level4_controller</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_level4</room>
     <room>rooms\rm_start</room>
     <room>rooms\rm_level1</room>
     <room>rooms\rm_level1_win</room>
@@ -97,7 +125,6 @@
     <room>rooms\rm_level3</room>
     <room>rooms\rm_level3_win</room>
     <room>rooms\rm_gameOver3</room>
-    <room>rooms\rm_level4</room>
     <room>rooms\rm_level4_win</room>
     <room>rooms\rm_gameOver4</room>
     <room>rooms\rm_completed</room>

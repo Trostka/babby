@@ -27,6 +27,9 @@
             <kind>1</kind>
             <string>global.scissors = false;
 global.screwdriver = false;
+global.usb = false;
+global.phone = false;
+global.phonePassword = false;
 </string>
           </argument>
         </arguments>
@@ -75,7 +78,7 @@ y = mouse_y;
             <kind>1</kind>
             <string>if(mouse_check_button(mb_left) &amp;&amp; !global.scissors &amp;&amp; !global.screwdriver)
 {
-    room_goto(rm_level1_win);   
+    room_goto(rm_level2_win);   
 }
 </string>
           </argument>
