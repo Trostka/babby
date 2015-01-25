@@ -76,7 +76,7 @@ y = mouse_y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(mouse_check_button(mb_left) &amp;&amp; !global.scissors &amp;&amp; !global.screwdriver)
+            <string>if(mouse_check_button(mb_right) &amp;&amp; !global.scissors &amp;&amp; !global.screwdriver)
 {
     room_goto(rm_level2_win);   
 }
