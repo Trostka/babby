@@ -63,6 +63,7 @@
     <instance objName="obj_babyHand" x="160" y="224" name="inst_A1DD4254" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_timer_bomb4" x="32" y="0" name="inst_0C9CDD5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level4_controller" x="64" y="0" name="inst_A47B096F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stickyNote" x="64" y="96" name="inst_F049102F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

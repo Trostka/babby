@@ -53,6 +53,10 @@
     <sprite>sprites\spr_rubberDucky</sprite>
     <sprite>sprites\spr_phoneHand</sprite>
     <sprite>sprites\spr_usbUnwound</sprite>
+    <sprite>sprites\spr_usbUnwound_highlight</sprite>
+    <sprite>sprites\spr_phoneCursor</sprite>
+    <sprite>sprites\spr_stickyNote</sprite>
+    <sprite>sprites\spr_winText</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_tilebomb</background>
@@ -112,9 +116,10 @@
     <object>objects\phoneHand</object>
     <object>objects\obj_usbUnwound</object>
     <object>objects\obj_level4_controller</object>
+    <object>objects\obj_stickyNote</object>
+    <object>objects\obj_winText</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_level4</room>
     <room>rooms\rm_start</room>
     <room>rooms\rm_level1</room>
     <room>rooms\rm_level1_win</room>
@@ -125,6 +130,7 @@
     <room>rooms\rm_level3</room>
     <room>rooms\rm_level3_win</room>
     <room>rooms\rm_gameOver3</room>
+    <room>rooms\rm_level4</room>
     <room>rooms\rm_level4_win</room>
     <room>rooms\rm_gameOver4</room>
     <room>rooms\rm_completed</room>
