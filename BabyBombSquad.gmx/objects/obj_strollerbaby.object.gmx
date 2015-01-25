@@ -27,11 +27,11 @@
             <kind>1</kind>
             <string>phy_fixed_rotation = true;
 canJump = true;
-velocity = 20;
-maxVelocity = 400;
+velocity = 100;
+jumpForce = -350;
+maxVelocity = 600;
 blowUp = false;
-canMove = true;
-phy_linear_velocity_x = 20;
+canMove = false;
 </string>
           </argument>
         </arguments>
@@ -76,7 +76,7 @@ wheel = instance_create(offsetX, offsetY, obj_wheel);
           <argument>
             <kind>1</kind>
             <string>//CREATE EVENT
-instance_create(x+200, y, obj_view_controller);
+instance_create(x+180, y, obj_view_controller);
 </string>
           </argument>
         </arguments>
@@ -131,6 +131,62 @@ wheel.y = self.y+offsetY;
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>obj_view_controller.x = x+180;
+obj_view_controller.y = y;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(phy_linear_velocity_x &gt; maxVelocity)
+{
+    phy_linear_velocity_x = maxVelocity;
+    blowUp = true;
+}
+if(phy_linear_velocity_x &lt; 10 and x &gt; 250 and x &lt; room_width-1800)
+{
+    blowUp = true;
+}
+if(canMove == true and blowUp == true)
+{
+    event_user(0);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -149,65 +205,14 @@ wheel.y = self.y+offsetY;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( canMove == true )
+            <string>if( canMove == true and x &lt; room_width-1800 )
 {
     physics_apply_local_force(0,0,velocity,0);
 }
-if(phy_linear_velocity_x &gt; maxVelocity)
+if(x &gt; room_width - 1200 and phy_linear_velocity_x &gt; 0)
 {
-    phy_linear_velocity_x = maxVelocity;
-    blowUp = true;
+    phy_linear_velocity_x = round(phy_linear_velocity_x - 1) ;
 }
-if(phy_linear_velocity_x &lt; 10)
-{
-    blowUp = true;
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if(canMove == true and blowUp == true)
-{
-    event_user(0);
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>obj_view_controller.x = x+200;
-obj_view_controller.y = y;
 
 </string>
           </argument>
@@ -257,9 +262,33 @@ obj_view_controller.y = y;
             <string>if(canMove == true and canJump == true)
 {
     phy_linear_velocity_y = 0;
-    physics_apply_local_impulse(0,30,0,-80);
+    physics_apply_local_impulse(0,30,0,jumpForce);
     canJump = false;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="11">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>canMove = true;
+phy_linear_velocity_x = 22;
 </string>
           </argument>
         </arguments>
@@ -300,8 +329,35 @@ obj_view_controller.y = y;
             <kind>1</kind>
             <string>var percentage;
 percentage = (phy_linear_velocity_x / maxVelocity ) * 100;
+var v = string(round(phy_linear_velocity_x / 20));
 
-draw_healthbar(100,50,700,100, percentage, c_black, c_blue, c_red, 0, true, true);
+draw_text(10,25, v + " mph");
+draw_text(10,10, "Speed");
+//draw_healthbar(10,25,500,70, percentage, c_black, c_blue, c_red, 0, true, true);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//draw_text(200,10,string(self.x) + "/" + string(room_width-1000));
+draw_text(200,10,"Fuel");
+var percentage = (self.x / (room_width-1000)) * 100;
+draw_healthbar(200,25,500,70, percentage, c_red, c_black, c_black, 1, true, true);
 </string>
           </argument>
         </arguments>
@@ -311,8 +367,8 @@ draw_healthbar(100,50,700,100, percentage, c_black, c_blue, c_red, 0, true, true
   <PhysicsObject>-1</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>
-  <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
-  <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
+  <PhysicsObjectDensity>0.600000023841858</PhysicsObjectDensity>
+  <PhysicsObjectRestitution>0.5</PhysicsObjectRestitution>
   <PhysicsObjectGroup>1</PhysicsObjectGroup>
   <PhysicsObjectLinearDamping>0.100000001490116</PhysicsObjectLinearDamping>
   <PhysicsObjectAngularDamping>0.100000001490116</PhysicsObjectAngularDamping>
@@ -320,7 +376,7 @@ draw_healthbar(100,50,700,100, percentage, c_black, c_blue, c_red, 0, true, true
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>32,32</point>
-    <point>16,24</point>
+    <point>31,23</point>
+    <point>31,31</point>
   </PhysicsShapePoints>
 </object>

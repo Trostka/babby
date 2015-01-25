@@ -81,12 +81,14 @@
       <object>objects\obj_sweet</object>
       <object>objects\obj_wheel</object>
       <object>objects\obj_view_controller</object>
+      <object>objects\obj_prompt</object>
     </objects>
     <object>objects\obj_startLogo</object>
     <object>objects\obj_startController</object>
     <object>objects\obj_gameOver</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_level3</room>
     <room>rooms\rm_start</room>
     <room>rooms\rm_level1</room>
     <room>rooms\rm_level1_win</room>
@@ -94,7 +96,6 @@
     <room>rooms\rm_level2</room>
     <room>rooms\rm_level2_win</room>
     <room>rooms\rm_gameOver2</room>
-    <room>rooms\rm_level3</room>
     <room>rooms\rm_level3_win</room>
     <room>rooms\rm_gameOver3</room>
     <room>rooms\rm_level4</room>
