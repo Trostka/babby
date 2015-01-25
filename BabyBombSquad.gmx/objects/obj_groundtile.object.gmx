@@ -59,7 +59,7 @@
     
     if(r = 1)
     {
-        offset = baseOffset + 120;     
+        offset = baseOffset + 100;     
     }
     else if(r = 0)
     {
