@@ -52,6 +52,15 @@
 {
     global.winLevel1 = true;
 }
+
+if(place_meeting(x, y, obj_scissorTrigger))
+{
+    sprite_index = spr_bomb1_fuse_highlight;
+}
+else
+{
+    sprite_index = spr_bomb1_fuse;
+}
 </string>
           </argument>
         </arguments>
