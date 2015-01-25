@@ -212,6 +212,8 @@ if(canMove == true and blowUp == true)
 if(x &gt; room_width - 1200 and phy_linear_velocity_x &gt; 0)
 {
     phy_linear_velocity_x = round(phy_linear_velocity_x - 1) ;
+    
+    room_goto(rm_level3_win);
 }
 
 </string>
@@ -359,8 +361,8 @@ phy_linear_velocity_x = 22;
 percentage = (phy_linear_velocity_x / maxVelocity ) * 100;
 var v = string(round(phy_linear_velocity_x / 20));
 
-draw_text(10,25, v + " mph");
-draw_text(10,10, "Speed");
+draw_text(30,25, v + " mph");
+draw_text(30,10, "Speed");
 //draw_healthbar(10,25,500,70, percentage, c_black, c_blue, c_red, 0, true, true);
 </string>
           </argument>

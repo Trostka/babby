@@ -144,7 +144,7 @@
             <kind>1</kind>
             <string>if(object_exists(phoneHand))
 {
-    draw_text(224, 224, keyboard_string);
+    draw_text(220, 224, keyboard_string);
 }
 </string>
           </argument>

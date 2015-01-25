@@ -9,15 +9,18 @@
     <sprite>sprites\spr_babby</sprite>
     <sprite>sprites\spr_screwdriver</sprite>
     <sprite>sprites\spr_babyhand</sprite>
+    <sprite>sprites\spr_scissorTrigger</sprite>
     <sprite>sprites\spr_scissors</sprite>
     <sprites name="level1">
       <sprite>sprites\spr_bomb1_spark</sprite>
       <sprite>sprites\spr_bomb1_dynamite</sprite>
       <sprite>sprites\spr_bomb1_fuse</sprite>
+      <sprite>sprites\spr_bomb1_fuse_highlight</sprite>
     </sprites>
     <sprites name="level2">
       <sprite>sprites\spr_bomb2_bomb</sprite>
       <sprite>sprites\spr_bomb2_wireRed</sprite>
+      <sprite>sprites\spr_bomb2_wireRed_highlight</sprite>
       <sprite>sprites\spr_bomb2_wireBlue</sprite>
       <sprite>sprites\spr_bomb2_wireGreen</sprite>
       <sprite>sprites\spr_bomb2_wireRedCut</sprite>
@@ -25,8 +28,10 @@
       <sprite>sprites\spr_bomb2_wireGreenCut</sprite>
       <sprite>sprites\spr_bomb2_timer</sprite>
       <sprite>sprites\spr_bomb2_plug</sprite>
+      <sprite>sprites\spr_bomb2_plug_highlight</sprite>
       <sprite>sprites\spr_bomb2_socket</sprite>
       <sprite>sprites\spr_bomb2_hatch</sprite>
+      <sprite>sprites\spr_bomb2_hatch_highlight</sprite>
       <sprite>sprites\spr_bomb2_plugInSocket</sprite>
     </sprites>
     <sprites name="level3">
@@ -35,6 +40,8 @@
       <sprite>sprites\spr_stroller</sprite>
       <sprite>sprites\spr_trigger</sprite>
       <sprite>sprites\spr_lollipop</sprite>
+      <sprite>sprites\spr_wheel</sprite>
+      <sprite>sprites\spr_boom</sprite>
     </sprites>
     <sprite>sprites\spr_startLogo</sprite>
     <sprite>sprites\spr_bomb4_screen</sprite>
@@ -51,13 +58,13 @@
     <sprite>sprites\spr_phoneCursor</sprite>
     <sprite>sprites\spr_stickyNote</sprite>
     <sprite>sprites\spr_winText</sprite>
-    <sprite>sprites\spr_wheel</sprite>
-    <sprite>sprites\spr_boom</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_tilebomb</background>
     <background>background\bg_tilebomb2</background>
     <background>background\back_level1</background>
+    <background>background\back_level2</background>
+    <background>background\background4</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_fuse</path>
@@ -65,6 +72,7 @@
   <objects name="objects">
     <object>objects\obj_babby</object>
     <object>objects\obj_scissors</object>
+    <object>objects\obj_scissorTrigger</object>
     <object>objects\obj_screwdriver</object>
     <object>objects\obj_babyHand</object>
     <object>objects\obj_zoom</object>
